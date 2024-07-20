@@ -12,3 +12,4 @@ public class CurrencyConvert {
         System.out.println("The value in dollars is: $" + z);
     }
 }
+
