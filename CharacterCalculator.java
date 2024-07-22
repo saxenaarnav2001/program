@@ -1,8 +1,7 @@
 package Paper;
 
 import java.util.Scanner;
-// a program to find number of iterations of a single digit in a given number
-@SuppressWarnings("ALL")
+
 public class CharacterCalculator {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -11,25 +10,21 @@ public class CharacterCalculator {
 
         System.out.print("Enter the digit to find: ");
         int y = in.nextInt();
-        int z = 10 - y;
 
-        int count = count(x, y, z);
-        System.out.println("Number of digit: " + count);
+        int count = count(x, y);
+        System.out.println("Number of " + y + "s: " + count);
     }
 
-    private static int count(int x, int y, int z) {
+    private static int count(int x, int y) {
         int count = 0;
-        while (x > 0){
+        while (x > 0) {
             int rem = x % 10;
-            if(rem == z){
+            System.out.println(rem);
+            if (rem == y) {
                 count++;
-                System.out.println(count);
             }
             x = x / 10;
-    }
-
-
+        }
         return count;
-
-}
+    }
 }
