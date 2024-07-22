@@ -19,7 +19,6 @@ public class CharacterCalculator {
         int count = 0;
         while (x > 0) {
             int rem = x % 10;
-            System.out.println(rem);
             if (rem == y) {
                 count++;
             }
